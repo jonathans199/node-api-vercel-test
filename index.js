@@ -14,6 +14,10 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '/home/home.html'))
 })
 
+app.get('/about', (req, res) => {
+  res.send('this is the about page in vercel so what')
+})
+
 // room 1 - /about route and serve /about/about.html
 // room 2 - /contact route and serve /contact/contact.html
 // room 3 - /services route and serve /services/services.html
@@ -22,4 +26,4 @@ app.get('/', (req, res) => {
 // room 6 - /portfolio route and serve /portfolio/portfolio.html
 
 // Export the Express API
-module.exports = app;
+module.exports = app
